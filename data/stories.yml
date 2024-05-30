@@ -1,0 +1,128 @@
+version: "2.0"
+
+stories:
+  - story: sub menu login affirm path
+    steps:
+      - intent: greet # if greet is recognised
+      - action: utter_mainmenu
+      - intent: submenu_login #login button is clicked
+      - action: utter_submenu_login
+
+  - story: sub menu login deny path
+    steps:
+      - intent: greet # if greet is recognised
+      - action: utter_mainmenu
+      - intent: submenu_login #login button is clicked
+      - action: utter_submenu_login
+
+
+  - story: sub menu faculty affirm path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_faculty
+      - action: utter_submenu_faculty
+
+  - story: sub menu faculty deny path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_faculty
+      - action: utter_submenu_faculty
+
+  - story: sub menu payment affirm path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_payment
+      - action: utter_submenu_payment
+
+#      - intent: affirm
+#      - action: utter_mainmenu
+
+  - story: sub menu payment deny path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_payment
+      - action: utter_submenu_payment
+
+
+  - story: sub menu approval affirm path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_approval
+      - action: utter_submenu_approval
+
+
+  - story: sub menu approval deny path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_approval
+      - action: utter_submenu_approval
+
+  - story: sub menu details affirm path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_details
+      - action: utter_submenu_details
+
+  - story: sub menu details deny path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: submenu_details
+      - action: utter_submenu_details
+
+  - story: mainmenu abt path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: mainmenu_about
+      - action: utter_mainmenu_about
+
+
+  - story: mainmenu abt deny path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: mainmenu_about
+      - action: utter_mainmenu_about
+
+  - story: mainmenu features path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: mainmenu_features
+      - action: utter_mainmenu_features
+
+  - story: mainmenu features deny path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: mainmenu_features
+      - action: utter_mainmenu_features
+
+
+  - story: mainmenu issues path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: menu
+      - action: utter_menu
+
+
+  - story: mainmenu issues  deny path
+    steps:
+      - intent: greet
+      - action: utter_mainmenu
+      - intent: menu
+      - action: utter_menu
+
+
+
+
+

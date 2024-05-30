@@ -1,0 +1,302 @@
+version: "2.0"
+
+rules:
+   - rule: Say goodbye anytime the user says goodbye
+     steps:
+       - intent: goodbye
+       - action: utter_goodbye
+   - rule: submenu logins
+     steps:
+       - intent: submenu_login #login button is clicked
+       - action: utter_submenu_login
+   - rule: parakh
+     steps:
+       - intent: parakh
+       - action: utter_parakh
+   - rule: h greet
+     steps:
+       - intent: h_greet
+       - action: utter_h_greet
+
+   - rule: h courses
+     steps:
+       - intent: h_course
+       - action: utter_h_courses
+
+   - rule: h college
+     steps:
+       - intent: h_college
+       - action: utter_h_college
+
+   - rule: h faculty
+     steps:
+       - intent: h_faculty
+       - action: utter_h_faculty
+
+   - rule: h payment
+     steps:
+       - intent: h_payment
+       - action: utter_h_payment
+
+   - rule: h del faculty
+     steps:
+       - intent: h_delete_faculty
+       - action: utter_h_delete_faculty
+
+   - rule: h up faculty
+     steps:
+       - intent: h_update_faculty
+       - action: utter_h_update_faculty
+
+   - rule: submenu facultys
+     steps:
+       - intent: submenu_faculty
+       - action: utter_submenu_faculty
+
+   - rule: submenu payment
+     steps:
+       - intent: submenu_payment
+       - action: utter_submenu_payment
+
+
+   - rule: mainmenu abt
+     steps:
+       - intent: mainmenu_about
+       - action: utter_mainmenu_about
+
+
+   - rule: mainmenu link
+     steps:
+       - intent: mainmenu_links
+       - action: utter_mainmenu_links
+       - action: utter_contd
+
+   - rule: mainmenu feature
+     steps:
+       - intent: mainmenu_features
+       - action: utter_mainmenu_features
+
+
+   - rule: mainmenu menu
+     steps:
+       - intent: menu
+       - action: utter_menu
+
+   - rule: Say 'I am a bot' anytime the user challenges
+     steps:
+       - intent: tell_name
+       - action: utter_name
+
+   - rule: out-of-scope
+     steps:
+       - intent: nlu_fallback
+       - action: utter_out_of_scope
+   - rule: fall-back
+     steps:
+       - intent: out_off_scope
+       - action: utter_out_of_scope
+
+   - rule: bot family
+     steps:
+       - intent: family
+       - action: utter_family
+   - rule: bot positive
+     steps:
+       - intent: positive
+       - action: utter_positive
+   - rule: bot negative
+     steps:
+       - intent: negative
+       - action: utter_negative
+   - rule: bot joke
+     steps:
+       - intent: tell_joke
+       - action: utter_joke
+   - rule: login path
+     steps:
+       - intent: login
+       - action: utter_login
+       - action: utter_contd
+
+   - rule: faculty path
+     steps:
+       - intent: faculty
+       - action: utter_faculty
+       - action: utter_contd
+
+   - rule: payment path
+     steps:
+       - intent: payment
+       - action: utter_payment
+       - action: utter_contd
+
+   - rule: password path
+     steps:
+       - intent: password
+       - action: utter_password
+       - action: utter_contd
+   - rule: username path
+     steps:
+       - intent: username
+       - action: utter_username
+       - action: utter_contd
+
+   - rule: update faculty path
+     steps:
+       - intent: update_faculty
+       - action: utter_update_faculty
+       - action: utter_contd
+
+   - rule: delete faculty path
+     steps:
+       - intent: delete_faculty
+       - action: utter_delete_faculty
+       - action: utter_contd
+
+   - rule: payment failure path
+     steps:
+       - intent: payment_failure
+       - action: utter_payment_failure
+       - action: utter_contd
+
+   - rule: payment queries path
+     steps:
+       - intent: payment_queries
+       - action: utter_payment_queries
+       - action: utter_contd
+
+   - rule: approval process path1
+     steps:
+       - intent: approval_process
+       - action: utter_approval_process
+       - action: utter_contd
+
+   - rule: approval path
+     steps:
+       - intent: submenu_approval
+       - action: utter_submenu_approval
+
+
+   - rule: approval info path
+     steps:
+       - intent: approval_process_info
+       - action: utter_approval_process_info
+       - action: utter_contd
+   - rule: approval query path
+     steps:
+       - intent: approval_process_queries
+       - action: utter_approval_process_queries
+       - action: utter_contd
+
+   - rule: change details path
+     steps:
+       - intent: change_details
+       - action: utter_change_details
+       - action: utter_contd
+
+   - rule: change details path1
+     steps:
+       - intent: submenu_details
+       - action: utter_submenu_details
+
+   - rule: details mandatory
+     steps:
+       - intent: details_mandatory
+       - action: utter_details_mandatory
+       - action: utter_contd
+
+   - rule: details change
+     steps:
+       - intent: details_change
+       - action: utter_details_change
+       - action: utter_contd
+
+   - rule: need path
+     steps:
+       - intent: need
+       - action: utter_need
+       - action: utter_contd
+
+   - rule: member path
+     steps:
+       - intent: member
+       - action: utter_member
+       - action: utter_contd
+   - rule: location path
+     steps:
+       - intent: location
+       - action: utter_location
+       - action: utter_contd
+
+   - rule: engg path
+     steps:
+       - intent: engg
+       - action: utter_engg
+       - action: utter_contd
+
+   - rule: college path
+     steps:
+       - intent: college
+       - action: utter_college
+       - action: utter_contd
+
+
+   - rule: sih path
+     steps:
+      - intent: sih
+      - action: utter_sih
+      - action: utter_contd
+
+   - rule: courses path
+     steps:
+      - intent: courses
+      - action: utter_courses
+      - action: utter_contd
+
+   - rule: contest path
+     steps:
+      - intent: contest
+      - action: utter_contest
+      - action: utter_contd
+
+   - rule: swayam path
+     steps:
+      - intent: swayam
+      - action: utter_swayam
+      - action: utter_contd
+
+   - rule: menu
+     steps:
+       - intent: greet
+       - action: utter_mainmenu
+
+
+   - rule: video
+     steps:
+       - intent: play_video
+       - action: action_video
+       - action: utter_contd
+
+   - rule: continue affirm path
+     steps:
+       - intent: affirm
+       - action: utter_mainmenu
+
+   - rule: continue deny path
+     steps:
+       - intent: deny
+       - action: utter_goodbye
+       - action: utter_service
+
+
+   - rule: service path
+     steps:
+       - intent: good_service
+       - action: utter_feedback
+       - action: action_save_conversation
+   - rule: service bad path
+     steps:
+       - intent: bad_service
+       - action: utter_feedback
+       - action: action_save_conversation
+

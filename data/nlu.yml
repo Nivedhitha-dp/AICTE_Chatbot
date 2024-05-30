@@ -1,0 +1,1113 @@
+version: "2.0"
+
+nlu:
+  - intent: h_greet
+    examples: |
+      - shubh prabhaat
+      - susandhya
+      - namaskaar
+      - namasthe
+      - namaste
+      - shubh prabhaat
+      - susandhya
+      - namaskaar
+      - namasthe
+      - namaste
+      - shubh prabhaat
+      - susandhya
+      - namaskaar
+      - namasthe
+      - namaste
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - hai
+      - vanakkam
+      - vanakam
+      - hey buddy
+      - hey hi
+      - whats up
+      - what's up
+      - wassup
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee later
+      - night
+      - bye
+      - bye
+      - nice day
+      - bye bye
+      - see later
+      - thanks
+      - thank
+      - tq
+      - tomorrow
+      - see
+      - byee
+      - bai
+      - have a great day
+      - thq
+      - yup
+      - gn
+
+  - intent: family
+    examples: |
+      - mother
+      - father
+      - sister
+      - brother
+      - owner
+      - made?
+      - made
+      - invented
+      - birth
+      - born
+      - age?
+      - age
+      - family
+      - old
+      - young
+
+  - intent: positive
+    examples: |
+      - cute
+      - smart
+      - interesting
+      - beautiful
+      - simple
+      - easy
+      - brilliant
+      - fantastic
+      - fabulous
+      - wonderful
+      - excellent
+      - enjoy
+      - so cute
+      - very smart
+      - smart
+      - cute
+      - smart
+      - interesting
+      - beautiful
+      - simple
+      - easy
+      - brilliant
+      - fantastic
+      - fabulous
+      - wonderful
+      - excellent
+      - enjoy
+      - so cute
+      - nice
+      - nice
+
+  - intent: negative
+    examples: |
+      - rude
+      - fool
+      - mental
+      - fool
+      - mental
+      - fool
+      - mental
+      - complex
+      - difficult
+      - boring
+      - waste
+      - crazy
+      - idiot
+      - stupid
+      - nonsense
+      - annoying
+      - suck
+      - inefficient
+
+  - intent: affirm
+    examples: |
+      - yes
+      - yes
+      - yes
+      - yes
+      - yes
+      - yes
+      - yes
+      - yes
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - sure
+      - okay
+      - ok
+      - hmm
+      - yeah
+      - crt
+      - right
+      - correct
+      - rgt
+      - ri8
+      - fine
+
+  - intent: deny
+    examples: |
+      - no
+      - no
+      - no
+      - no
+      - no
+      - no
+      - no
+      - no
+      - no
+      - no
+      - nope
+      - nope
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - wont
+      - sorry
+      - cant
+      - can't
+      - dont
+      - no way
+      - not at all
+      - nahi
+      - nope
+      - nah
+
+  - intent: tell_name
+    examples: |
+      - name?
+      - name ?
+      - I call you?
+      - a bot?
+      - a human?
+      - who are you?
+      - name
+      - name
+      - name
+      - name
+      - name
+      - name
+
+  - intent: tell_joke
+    examples: |
+      - joke
+      - joke
+      - joke
+      - joke
+      - JOke
+      - JOKE
+      - Joke
+      - Jokes
+
+  - intent: play_video
+    examples: |
+      - video
+      - video
+      - video
+      - play a video
+      - open a video
+      - show a video
+      - video
+      - vdo
+      - open the url
+      - Open the link in the browser
+      - Workshop on Examination Reforms - Day 1
+      - Examination
+      - workshop
+      - day1
+      - reforms
+      - workshop
+      - workshop
+      - workshop
+      - workshop
+      - Examination Reforms
+      - Examination Reforms
+      - Examination Reforms
+      - Examination Reforms
+      
+      
+      
+
+  - intent: out_off_scope
+    examples: |
+      - Order a food
+      - is a number?
+      - college are you?
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 0
+
+#  - intent: chitchat/ask_login
+#    examples: |
+#      - login?
+#      - login
+#      - user name
+#      - username
+#      - user-name
+#      - user id
+#      - user-id
+#      - userid
+#      - password
+#      - password
+#      - register
+#      - sign up
+#      - forgot
+#      - generate report
+#      - report
+#      - Report
+#      - Forgotten password
+#      - reset
+#      - re-set
+#      - Invalid username
+#      - Invalid password
+
+  - intent: login
+    examples: |
+      - login?
+      - login
+      - login
+      - login
+      - login
+      - login
+      - login
+      - user name
+      - username
+      - user-name
+      - user id
+      - user-id
+      - userid
+      - password
+      - password
+      - register
+      - sign up
+      - forgot
+      - generate report
+      - report
+      - Report
+      - Forgotten password
+      - reset
+      - re-set
+      - Invalid username
+      - Invalid password
+  - intent: password
+    examples: |
+      - Invalid password
+      - Forgotten password
+      - password
+      - forgot password
+      - pw
+      - forget pw
+      - pass
+      - password change
+      - password change
+      - password change
+      - password change
+      - password change
+      - password wrong
+  - intent: username
+    examples: |
+      - user name
+      - username
+      - username
+      - username
+      - username
+      - userid
+      - user name
+      - username
+      - username
+      - username
+      - username
+      - userid
+      - userid
+      - user-name
+      - user id
+      - user-id
+      - userid
+  - intent: update_faculty
+    examples: |
+      - update faculty
+      - faculty update
+      - update faculty record
+      - update faculty
+      - faculty update
+      - update faculty record
+      - update faculty
+      - faculty update
+      - update faculty record
+      - update faculty
+      - faculty update
+      - update faculty record
+
+  - intent: delete_faculty
+    examples: |
+      - delete faculty
+      - delete faculty
+      - delete faculty
+      - delete faculty
+      - faculty delete
+      - delete faculty
+      - delete faculty
+      - delete faculty
+      - delete faculty
+      - faculty delete
+      - delete faculty record
+      - delete faculty record
+      - delete faculty record
+      - delete faculty record
+      - del faculty
+      - faculty del
+      - faculty del
+      - faculty del
+
+
+#  - intent: chitchat/ask_aicte
+#    examples: |
+#      - aicte?
+#      - runs it?
+#      - what is its full form?
+#      - it work?
+#  - intent: chitchat/ask_approval_process
+#    examples: |
+#      - approval
+#      - approval process
+#      - apply
+#      - approval
+#      - apply
+#      - approval process
+#      - approved
+#      - approval institute
+  - intent: approval_process
+    examples: |
+      - approval
+      - approval process
+      - apply
+      - approval
+      - apply
+      - approval process
+      - approved
+      - approval institute
+      - approval process
+      - approved
+      - approval institute
+      - approval process
+      - approved
+      - approval institute
+#  - intent: chitchat/ask_payment
+#    examples: |
+#      - online payment
+#      - payment
+#      - Payment
+#      - Amount
+#      - amount
+#      - money
+#      - cash
+#      - payment gateway
+#      - payment issues
+#      - payment tab
+#      - payment receipt
+#      - transaction
+#      - bill
+#      - payment
+  - intent: payment
+    examples: |
+      - online payment
+      - payment
+      - Payment
+      - Amount
+      - amount
+      - money
+      - online payment
+      - payment
+      - Payment
+      - Amount
+      - amount
+      - money
+      - cash
+      - payment gateway
+      - payment issues
+      - payment tab
+      - payment receipt
+      - transaction
+      - bill
+      - payment
+#  - intent: chitchat/ask_faculty
+#    examples: |
+#      - faculty
+#      - Faculty
+#      - Faculty record
+#      - Update faculty
+#      - faculty update
+#      - delete faculty
+#      - faculty delete
+#      - Staff
+  - intent: faculty
+    examples: |
+      - faculty
+      - Faculty
+      - Faculty
+      - Faculty
+      - Faculty
+      - Faculty
+      - Faculty record
+      - Update faculty
+      - faculty update
+      - delete faculty
+      - faculty delete
+      - Staff
+#  - intent: chitchat/ask_change_details
+#    examples: |
+#      - application
+#      - change
+#      - reopen
+#      - Application
+#      - Application form
+#      - Applied
+#      - non-editable
+#      - edit
+#      - application mistake
+#      - read-only
+#      - read only
+#      - application form
+  - intent: change_details
+    examples: |
+      - application
+      - application
+      - application
+      - application
+      - application
+      - application
+      - application
+      - change
+      - reopen
+      - Application
+      - Application form
+      - Applied
+      - non-editable
+      - edit
+      - application mistake
+      - read-only
+      - read only
+      - application form
+
+  - intent: need
+    examples: |
+      - aicte
+      - aicte
+      - aicte
+      - aicte
+      - aicte
+      - aicte
+      - AICTE
+      - AICTE
+      - AICTE
+      - AICTE
+      - AICTE
+      - AICTE
+      - A.I.C.T.E
+      - A.I.C.T.E
+      - A.I.C.T.E
+      - A.I.C.T.E
+      - A.I.C.T.E
+      - A.I.C.T.E
+      - A.I.C.T.E
+      - a.i.c.t.e
+      - a.i.c.t.e
+      - need
+      - aicte why
+      - useful
+      - need
+      - aicte why
+      - useful
+
+  - intent: member
+    examples: |
+      - want
+      - be member
+      - members
+      - members
+      - members
+      - members
+      - members
+      - members
+      - members
+      - members
+      - want
+      - be member
+      - members
+
+  - intent: engg
+    examples: |
+      - under aicte
+      - consists
+      - affiliated
+      - under aicte
+      - consists
+      - affiliated
+      - affiliated
+      - under aicte
+      - consists
+      - affiliated
+      - rules
+      - governs
+      - governed by
+      - rules
+      - governs
+      - governed by
+
+  - intent: college
+    examples: |
+        - colleges
+        - College
+        - College and schools
+        - College list
+        - approved college list
+        - colleges
+        - College
+        - College and schools
+        - College list
+        - colleges
+        - College
+        - College and schools
+        - College list
+
+  - intent: location
+    examples: |
+        - located where
+        - City
+        - head office
+        - branch office
+        - located where
+        - City
+        - head office
+        - branch office
+        - location
+        - place
+        - located where
+        - City
+        - head office
+        - branch office
+        - location
+        - place
+
+
+  - intent: sih
+    examples: |
+      - hackathon participate
+      - hackathon win
+      - hackathon register
+      - hackathon
+      - sih
+      - hackathon participate
+      - hackathon win
+      - hackathon register
+      - hackathon
+      - sih
+      - hackathon participate
+      - hackathon win
+      - hackathon register
+      - hackathon participate
+      - hackathon win
+      - hackathon register
+
+  - intent: courses
+    examples: |
+      - courses
+      - course
+      - free course
+      - course freely
+      - without cost
+      - zero pay
+      - win
+      - courses
+      - internship
+      - internships need
+      - internships
+      - course
+      - free course
+      - course freely
+      - without cost
+      - zero pay
+      - win
+
+  - intent: contest
+    examples: |
+      - contest
+      - competitions
+      - competitions
+      - start up contest
+      - contest
+      - contest
+      - competitions
+      - competitions
+      - start up contest
+      - contest
+
+  - intent: swayam
+    examples: |
+        - swayam
+        - nptel
+        - NPTEL
+        - SWAYAM NPTEL
+        - nptel swayam
+        - swayam
+        - nptel
+        - NPTEL
+        - SWAYAM NPTEL
+        - nptel swayam
+
+  - intent: mainmenu_about
+    examples: |
+      - mainmenu
+      - mainmenu
+      - mainmenu
+      - mainmenu
+      - mainmenuabout
+
+  - intent: mainmenu_links
+    examples: |
+      - link
+      - links
+      - url
+      - direct links
+      - link
+      - links
+      - url
+      - direct links
+
+  - intent: mainmenu_features
+    examples: |
+      - mainfeatures
+      - mainfeatures
+      - mainfeatures
+      - mainfeatures
+      - mainfeatures
+
+  - intent: menu
+    examples: |
+      - main
+      - mainissues
+      - mainissues
+      - mainissues
+      - mainissues
+
+  - intent: submenu_login
+    examples: |
+      - submenu
+      - submenu
+      - submenu
+      - submenu
+      - submenu
+      - submenu
+      - submenulogin
+  - intent: submenu_faculty
+    examples: |
+      - menufaculty
+      - menufaculty
+      - menufaculty
+      - menufaculty
+      - menufaculty
+      - menufaculty
+      - menufaculty
+      - menufaculty
+      - menufaculty
+      - menu facul
+      - menu fac
+
+  - intent: submenu_payment
+    examples: |
+      - menupayment
+      - menupayment
+      - menupayment
+      - menupayment
+      - menupayment
+      - menupayment
+      - menupayment
+      - menupayment
+      - menupayment
+      - menupayment
+      - menu pay
+      - menu pays
+
+  - intent: submenu_details
+    examples: |
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+      - menudetails
+  - intent: submenu_approval
+    examples: |
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - menuapproval
+      - approval process
+
+  - intent: approval_process_info
+    examples: |
+      - approvalinfo
+      - approvalprocessinfo
+      - approvalinfo
+      - approvalinfo
+      - approvalinfo
+      - approvalprocessinfo
+      - approvalprocessinfo
+      - approvalprocessinfo
+      - approvalprocessinfo
+      - approvalprocessinfo
+      - approvalprocessinfo
+      - approvalinfo
+      - approvalinfo
+  - intent: approval_process_queries
+    examples: |
+      - approvalquery
+      - approvalquery
+      - approvalquery
+      - approvalquery
+      - approvaldoubt
+      - approvalqueries
+      - approvaldoubt
+      - approvaldoubt
+      - approvaldoubt
+      - approvaldoubt
+
+  - intent: payment_failure
+    examples: |
+      - paymentfailure
+      - paymentfailure
+      - paymentfailure
+      - paymentfailure
+      - payfailure
+      - paymentnorefund
+      - paymentfailure
+      - paymentfailure
+      - payment failure
+      - payment failure
+      - paymentfailure
+  - intent: payment_queries
+    examples: |
+      - paymentqueries
+      - paymentissues
+      - paymentcontact
+      - paymentemail
+      - paymentqueries
+      - paymentqueries
+      - paymentqueries
+      - paymentcontact
+      - paymentcontact
+      - paymentissues
+      - paymentissues
+  - intent: details_mandatory
+    examples: |
+      - details
+      - mandatorydetails
+      - mandatorydetails
+      - mandatorydetails
+      - Pan card
+      - Aadhar Card
+
+  - intent: details_change
+    examples: |
+      - edit
+      - changedetails
+      - read-only
+      - edittable
+      - edit
+      - edit
+      - edit
+      - non-edittable
+      - changedetails
+      - changedetails
+      - changedetails
+
+  - intent: good_service
+    examples: |
+      - service good
+      - satisfied very much
+      - very good
+      - service good
+      - satisfied very much
+      - very good
+      - service good
+      - satisfied very much
+      - very good
+      - service good
+      - satisfied very much
+      - very good
+
+#  - intent: ok_service
+#    examples: |
+#      - service ok
+#      - satisfactory
+#      - satisfied
+#      - service ok
+#      - satisfactory
+#      - satisfied
+#      - service ok
+#      - satisfactory
+#      - satisfied
+
+  - intent: bad_service
+    examples: |
+        - not ok
+        - not good
+        - not ok
+        - not good
+
+  - intent: h_faculty
+    examples: |
+      - sankaay
+      - sankaay
+      - sankaay
+      - sankaay
+      - sankaay
+      - sankaay
+      - sankaay rikord
+      - apadet phaikaltee
+      - sankaay adyatan
+      - sankaay hataen
+      - sankaay hataen
+      - karmachaaree
+
+
+  - intent: h_college
+    examples: |
+      - mahaavidyaalay
+      - mahaavidyaalay
+      - mahaavidyaalay
+      - mahaavidyaalay
+      - mahaavidyaalay
+      - mahaavidyaalay
+      - kolej soochee
+      - mahaavidyaalay
+      - mahaavidyaalay
+      - skool
+      - skool
+      - skool
+      - kolej soochee
+      - mahaavidyaalay
+      - mahaavidyaalay
+      - sveekrt kolej soochee
+      - sveekrt kolej soochee
+      - kolej
+      - kolej
+      - kolej
+      - kolej
+      - kolej soochee
+      - mujhe eaeeseeteeee kolejon ke baare mein batao
+      - mujhe eaeeseeteeee kolejon ke baare mein batao
+      - mujhe eaeeseeteeee kolejon ke baare mein batao
+      - mujhe eaeeseeteeee college ke baare mein batao
+      - - mujhe AICTE kolejon ke baare mein batao
+      - - mujhe AICTE kolejon ke baare mein batao
+      - - mujhe AICTE kolejon ke baare mein batao
+      
+      
+  - intent: parakh
+    examples: |
+      - parakh
+      - parakh
+      - parakh
+      - himaachal pradesh mein paarakh ke baare mein bataen
+      - himachal pradesh
+      - himaachal pradesh mein paarakh ke baare mein bataen
+      - himaachal pradesh mein paarakh ke baare mein bataen
+      - baare mein bataen
+      - mein paarakh ke baare
+      - himaachal pradesh mein paarakh ke baare mein bataen
+      - himaachal pradesh mein paarakh ke baare mein bataen
+      - himaachal pradesh mein paarakh ke baare mein bataen
+      - himaachal pradesh mein paarakh ke baare mein bataen
+      - paarakh
+      - paarakh
+      - paarakh
+      - paarakh
+
+  - intent: h_greet
+    examples: |
+      - shubh prabhaat
+      - susandhya
+      - namaskaar
+      - namasthe
+      - namaste
+      - shubh prabhaat
+      - susandhya
+      - namaskaar
+      - namasthe
+      - namaste
+      - shubh prabhaat
+      - susandhya
+      - namaskaar
+      - namasthe
+      - namaste
+
+  - intent: h_update_faculty
+    examples: |
+      - adyatan sankaay
+      - sankaay adyatan
+      - apadet karen
+      - apadet karen
+      - apadet karen
+      - apadet karen
+      - apadet karen
+      - adyatan sankaay
+      - sankaay adyatan
+      - apadet phaikaltee rikord
+
+  - intent: h_delete_faculty
+    examples: |
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+      - sankaay rikord hataen
+
+
+  - intent: h_courses
+    examples: |
+      - paathyakram
+      - paathyakram
+      - mupht paathyakram
+      - paathyakram
+      - paathyakram
+      - paathyakram
+      - mupht paathyakram
+      - paathyakram
+      - paathyakram
+      - mupht paathyakram
+
+
+
+  - intent: h_payment
+    examples: |
+      - bhugataan
+      - bhugataan
+      - bhugataan
+      - rakam
+      - rakam
+      - dhan
+      - nakad
+      - bhugataan
+      - bhugataan kee samasyaen
+      - bhugataan taib
+      - bhugataan raseed
+      - len - den
+      - lenden
+      - len den
+      - len - den
+      - lenden
+      - len den
+      - len - den
+      - lenden
+      - len den
+      - vipatr
+      - bhugataan
+      - bhugataan
+      - bhugataan
+      - rakam
+      - rakam
+      - dhan
+      - nakad
+      - bhugataan
+      - bhugataan kee samasyaen
+      - bhugataan taib
+      - bhugataan raseed
+      - vipatr
+      - bhugataan
+      - bhugataan
+      - bhugataan
+      - rakam
+      - rakam
+      - dhan
+      - nakad
+      - bhugataan
+      - bhugataan kee samasyaen
+      - bhugataan taib
+      - bhugataan raseed
+      - vipatr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
